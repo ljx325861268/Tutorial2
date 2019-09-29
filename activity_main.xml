@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="89dp"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/news" />
+
+    <ScrollView
+        android:layout_width="361dp"
+        android:layout_height="261dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/id_contant1"
+                android:layout_width="347dp"
+                android:layout_height="105dp"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/news1" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="333dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:onClick="onRead"
+                android:text="DETAIL" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="371dp"
+        android:layout_height="287dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/id_contant2"
+                android:layout_width="358dp"
+                android:layout_height="97dp"
+                android:text="TextView" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/news2" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:onClick="onRead"
+                android:text="Detail" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
